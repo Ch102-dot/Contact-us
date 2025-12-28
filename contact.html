@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web & Design</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: white;
+    }
+
+    .banner {
+        background: linear-gradient(135deg, #007BFF, #00CFFF);
+        border-radius: 20px;
+        padding: 40px 60px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        max-width: 800px;
+        animation: glowBanner 3s infinite alternate;
+    }
+
+    @keyframes glowBanner {
+        0% { box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        100% { box-shadow: 0 10px 40px rgba(0,255,255,0.7); }
+    }
+
+    .banner h1 {
+        font-size: 48px;
+        margin: 0 0 15px;
+        color: #fff;
+        text-shadow: 0 0 5px #00f, 0 0 10px #0ff;
+        animation: textGlow 2s infinite alternate;
+    }
+
+    @keyframes textGlow {
+        0% { text-shadow: 0 0 5px #00f, 0 0 10px #0ff; }
+        100% { text-shadow: 0 0 15px #0ff, 0 0 25px #0ff; }
+    }
+
+    .banner h2 {
+        font-size: 28px;
+        margin: 0 0 20px;
+        color: #f0f0f0;
+    }
+
+    .banner p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+        color: #e0e0e0;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+    }
+
+    input, textarea {
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: #ff6f61;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff3b2f;
+        animation: buttonGlow 2s infinite alternate;
+    }
+
+    button:hover {
+        background-color: #ff3b2f;
+    }
+
+    @keyframes buttonGlow {
+        0% { box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff3b2f; }
+        100% { box-shadow: 0 0 20px #ff6f61, 0 0 40px #ff3b2f; }
+    }
+</style>
+</head>
+<body>
+
+<div class="banner">
+    <h1>AMIR USMAN</h1>
+    <h2>Web Developer & Graphic Designer</h2>
+    <p>
+        Professional websites | Eye-catching designs | Client-ready portfolios  
+        Modern, responsive & fully customized for your brand 🚀
+    </p>
+
+    <!-- Formspree Contact Form -->
+    <form action="https://formspree.io/f/maqydonw" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Contact Now</button>
+    </form>
+</div>
+
+</body>
+</html>
